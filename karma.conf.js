@@ -1,4 +1,6 @@
-module.exports = function (config) {
+const path = require('path');
+
+module.exports = function(config) {
   config.set({
     frameworks: ['jasmine', '@angular-devkit/build-angular'],
     plugins: [
@@ -8,7 +10,7 @@ module.exports = function (config) {
       require('karma-jasmine-html-reporter')
     ],
     coverageReporter: {
-      dir: require('path').join(__dirname, './coverage/health-challenge-tracker'),
+      dir: path.join(__dirname, './coverage/health-challenge-tracker'),
       subdir: '.',
       reporters: [
         { type: 'lcov', subdir: '.' },
