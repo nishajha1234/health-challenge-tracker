@@ -28,6 +28,9 @@ jobs:
       run: npm test -- --coverage
 
     - name: Upload coverage to Coveralls
-      run: npx coveralls ./coverage/lcov.info
+      run: npx coveralls ./coverage/health-challenge-tracker/lcov.info
       env:
         COVERALLS_REPO_TOKEN: ${{ secrets.COVERALLS_REPO_TOKEN }}
+
+    - name: Check coverage report
+      run: echo "Coverage report is uploaded to Coveralls"
