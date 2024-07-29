@@ -1,12 +1,16 @@
 import { TestBed } from '@angular/core/testing';
 import { AppComponent } from './app.component';
+import { WorkoutListComponent } from './workout-list/workout-list.component'; // Ensure this path is correct
+import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 
 describe('AppComponent', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
       declarations: [
-        AppComponent
+        AppComponent,
+        WorkoutListComponent // Add this component to declarations
       ],
+      schemas: [CUSTOM_ELEMENTS_SCHEMA] // Optionally include this to ignore unknown elements
     }).compileComponents();
   });
 
