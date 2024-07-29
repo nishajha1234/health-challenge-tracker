@@ -25,11 +25,8 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      - name: List installed packages
-        run: npm list --depth=0
-
-      - name: Run tests with verbose output
-        run: npm test -- --code-coverage --verbose
+      - name: Run tests with coverage
+        run: npm test -- --code-coverage
 
       - name: Upload coverage reports to Codecov
         uses: codecov/codecov-action@v4.0.1
