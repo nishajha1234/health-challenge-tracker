@@ -6,8 +6,7 @@
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test",
-    "coveralls": "cat ./coverage/lcov.info | coveralls"
+    "test": "ng test"
   },
   "private": true,
   "dependencies": {

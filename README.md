@@ -1,7 +1,5 @@
 # HealthChallengeTracker
 
-![Coveralls](https://coveralls.io/repos/github/nishajha1234/health-challenge-tracker/badge.svg)
-
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.13.
 
 ## Development server
@@ -31,3 +29,4 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 ## Code Coverage
 
 The code coverage report can be found [here](./coverage/health-challenge-tracker/index.html).
+
